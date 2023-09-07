@@ -11,7 +11,8 @@ app.get("/api", (req, res) => {
 
   const currentUTCTime = moment().utc().format("YYYY-MM-DD HH:mm:ss");
 
-  const githubFileURL = "";
+  const githubFileURL =
+    "https://github.com/Hack-Light/basic-node-hngx/blob/main/app.js";
   const githubRepoURL = "https://github.com/Hack-Light/basic-node-hngx";
 
   const responseJSON = {
