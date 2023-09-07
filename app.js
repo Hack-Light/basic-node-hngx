@@ -9,7 +9,8 @@ app.get("/api", (req, res) => {
 
   const currentDayOfWeek = moment().format("dddd");
 
-  const currentUTCTime = moment().utc().format("YYYY-MM-DD HH:mm:ss");
+  const currentUTCTime = new Date().toISOString();
+  //   const currentUTCTime = moment().utc().format("YYYY-MM-DD HH:mm:ss");
 
   const githubFileURL =
     "https://github.com/Hack-Light/basic-node-hngx/blob/main/app.js";
