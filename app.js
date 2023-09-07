@@ -9,7 +9,7 @@ app.get("/api", (req, res) => {
 
   const currentDayOfWeek = moment().format("dddd");
 
-  const currentUTCTime = new Date().toISOString();
+  const currentUTCTime = moment().utc().format("YYYY-MM-DDTHH:mm:ss[Z]");
   //   const currentUTCTime = moment().utc().format("YYYY-MM-DD HH:mm:ss");
 
   const githubFileURL =
