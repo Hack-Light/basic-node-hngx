@@ -12,7 +12,7 @@ app.get("/api", (req, res) => {
   const currentUTCTime = moment().utc().format("YYYY-MM-DD HH:mm:ss");
 
   const githubFileURL = "";
-  const githubRepoURL = "";
+  const githubRepoURL = "https://github.com/Hack-Light/basic-node-hngx";
 
   const responseJSON = {
     slack_name: slackName,
